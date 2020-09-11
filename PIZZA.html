@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html>
+	<script>
+	
+		// NIELS VERHART A3 - SOFTWARE DEVELOPER - PIZZA CALCULATOR.
+
+	// -- kleine pizza
+	//variabele om de totaal prijs te berekenen van aantal kleine pizza's * kleine pizza prijs
+	var smallPizza_totalprise	= 0;
+	//variabele van de gebruikersinvoer voor het aantal kleine pizza's
+	var smallPizzaQuantity		= 0;
+	// constante waarde: prijs van een kleine pizza
+	const SMALLPIZZAPIZZAPRICE	= 10;
+
+	// -- MEDIUM PIZZA 
+	//variabele om de totaal prijs te berekenen van aantal medium pizza's * medium pizza prijs
+	var mediumPizza_totalprise	= 0; 
+	//variabele van de gebruikersinvoer voor het aantal medium pizza's
+	var mediumPizzaQuantity		= 0; 
+	// constante waarde: prijs van een medium pizza
+    const MEDIUMPIZZAPRICE		= 15; 
+
+
+    // -- LARGE PIZZA
+    // variabele om de totaal prijs te bereken van aantal large pizza's * large pizza prijs
+	var largePizza_totalprise	= 0;
+	//variabele van de gebruikersinvoer van het aantal medium pizza's.
+	var largePizzaQuantity		= 0; 
+	// constante waarde = prijs van een grote pizza.
+	const LARGEPIZZAPRICE		= 20;
+
+	
+	// var toegevoegd die eerder hierboven is benoemd. prompt aan toegevoegd voor de invoer.
+	 var smallPizzaQuantity 	= prompt("Hoeveel pizza's wilt u van de kleine? Een kleine pizza kost 10.");
+	
+	// var toegevoegd die eerder hierboven is benoemd. prompt aan toegevoegd voor de invoer.
+	 var mediumPizzaQuantity 	= prompt ("Hoeveel pizza's wilt u van de medium? Een medium pizza kost 15.");
+	
+	// var toegevoegd die eerder hierboven is benoemd. prompt aan toegevoegd voor de invoer.
+	 var largePizzaQuantity		= prompt ("Hoeveel pizza's wilt u van de large? Een large pizza kost 20");
+
+	// in de variabele word de totaal prijs van de small pizza's berekent. / aantal * prijs. 
+	 var smallPriceTotal		= smallPizzaQuantity * SMALLPIZZAPIZZAPRICE;
+	
+
+	//in deze variabele word de totaal prijs van de medium pizza's uitgerekent. / aantal * prijs.
+	 var mediumPriceTotal		= mediumPizzaQuantity * MEDIUMPIZZAPRICE;
+	
+	// in deze veriabele word de totaal prijs van de large pizza's uitgerekent. / aantal * prijs.
+	 var largePriceTotal		= largePizzaQuantity * LARGEPIZZAPRICE;
+	
+	// in deze variabel words de totaal prijs (de bon) berekent. small pizza prijs + medium pizza prijs + large pizza prijs.
+	 var totalPrice				= smallPriceTotal + mediumPriceTotal + largePriceTotal;
+	 // doc. aangemaakt voor het tonen op het scherm: Aantal bestelde pizza's.
+	 document.write ("Aantal bestelde kleine pizza's  :  " + smallPizzaQuantity + "<br>"); 
+	 
+	 //doc. aangemaakt voor het tonen op hetr scherm: totaal prijs small pizza's.
+	 document.write ("Prijs kleine pizza's  :  " + smallPizzaQuantity * SMALLPIZZAPIZZAPRICE + "<br>")
+
+	 //doc. aangemaakt voor het tonen op het scherm: totaal bestelde medium pizza's
+	 document.write ("Aantal bestelde medium pizza's  :" + mediumPizzaQuantity + "<br>");
+	
+	 //doc. aangemaakt voor het tonen op het scherm: totaal prijs medium pizza's.
+	 document.write ("Prijs medium pizza's  ;" + mediumPizzaQuantity * MEDIUMPIZZAPRICE + "<br>");
+	 //doc. aangemaakt voor het tonen op het scherm ; aantal bestelde large pizza's.
+	 document.write ("Aantal large pizza's  :" + largePizzaQuantity  + "<br>");
+	//doc. aangemaakt voor het tonen op het scherm; Ttotaal prijs large pizza's.
+	 document.write ("Prijs large pizza's  :" + largePizzaQuantity * LARGEPIZZAPRICE + "<br>"); 
+	 //doc. aangemakt voor het tonen op het scherm: totaal prijs (de bon).
+	 document.write ("Te betalen : " + totalPrice);
+	 
+
+	</script>
+<body>
+</body>
+</html>
